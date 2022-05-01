@@ -1,3 +1,13 @@
+/*
+Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
+Note that after backspacing an empty text, the text will continue empty.
+
+Example 1:
+Input: s = "ab#c", t = "ad#c"
+Output: true
+Explanation: Both s and t become "ac".
+*/
+
 #include <iostream>
 #include <string>
 
@@ -10,7 +20,6 @@ public:
         int i = s.length() - 1;
         
         while(i > 0){
-            
             if(s[i] == '#'){
                 backspace++;
             }else{
@@ -21,7 +30,6 @@ public:
                     backspace--;
                 }
             }
-            
             i--;
         }
         return answer;
@@ -40,7 +48,6 @@ public:
 };
 
 int main() {
-	// your code goes here
 	Solution sobj;
 	std::cout << sobj.result("ab##", "c#d#");
 	
