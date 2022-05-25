@@ -1,0 +1,4 @@
+# all interesting, challenging, good sql solutions to problems solved on different platforms
+
+1. select DISTINCT CITY from STATION where MOD(ID, 2) = 0;
+MOD here is modulus, eg 10 % 2 = 0
