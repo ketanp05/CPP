@@ -1,4 +1,21 @@
 # all interesting, challenging, good sql solutions to problems solved on different platforms
 
-1. select DISTINCT CITY from STATION where MOD(ID, 2) = 0;
+1. 
+select DISTINCT CITY from STATION where MOD(ID, 2) = 0;
 MOD here is modulus, eg 10 % 2 = 0
+
+2. 
+select (count(CITY) - count(DISTINCT(CITY))) from STATION;
+select (count(CITY) - count(DISTINCT CITY)) from STATION;
+select (count(*) - count(DISTINCT CITY)) from STATION;
+
+3.
+select CITY, length(CITY) from STATION order by length(CITY), CITY limit 1;
+select CITY, length(CITY) from STATION order by length(CITY) DESC, CITY ASC limit 1;
+limit 1 here returns the first result
+
+(select city, length(city) from station order by length(city) desc, city asc limit 1)
+union
+(select city, length(city) from station order by length(city), city limit 1);
+
+4.
