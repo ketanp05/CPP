@@ -12,9 +12,9 @@ class Solution:
             CountT[letter_t] = 1 + CountT.get(letter_t, 0)
             
         for key in CountS:
-            if CountS[key] == CountT[key]:
-                return True
-        return False
+            if CountS[key] != CountT.get(key, 0):
+                return False
+        return True
         
         # if(len(s) != len(t)):
         #     return False
