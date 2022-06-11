@@ -3,6 +3,7 @@ from collections import defaultdict
 
 class Solution:
 	def groupAnagram(self, strs: List[str]) -> List[List[str]]:
+		# my approach
 		# groupAnagramResult = {}
 		# for i in range(len(strs)):
 		# 	for j in range(i+1, len(strs)):
@@ -13,6 +14,7 @@ class Solution:
 		
 		# for i in range(len(groupAnagramResult)):
 
+		# optimal
 		# defaultdict provides a default value for the key that does not exist
 		# you can provide a default value, in this case its a list
 		groupAnagramResult = defaultdict(list)
