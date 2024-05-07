@@ -12,9 +12,13 @@ class GroupAnagramsProblem:
         for string_in_strs in strs:
             count = [0] * 26 # 26 letters of an alphabet
 
+            # okay so here i see a character i increment the relvent index positon in the count list
             for character in string_in_strs:
                 count[ord(character) - ord('a')] += 1
 
+            # as i mentioned that list cannot be the key in a dict so i converted it into a tuple
+            # here i append the string in the list
+            # to conclude the keys are tuple with character counts and values are list of strings with those particular count combination(tuple)
             result_map[tuple(count)].append(string_in_strs)
         
         return result_map.values()
