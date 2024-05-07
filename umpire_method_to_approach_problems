@@ -1,27 +1,31 @@
 umpire method
 
-
 UNDERSTAND
+
 1. ask the interviewer "clarifying" questions before jumping to attempt the question.
 2. take 2-3 minutes
 3. think of edge cases(think of extreme cases)
 4. these questions are moslty related to input
 
 MATCH
+
 1. does this problem match any common patterns we have seen.
 2. which data structure to use
 
 PLAN/PSUEDOCODE
+
 1. use diagrams and psuedocode
 2. run psuedocode with test cases
 
 IMPLEMENT
+
 1. Translate algorithm/psuedocode in to code
 
 REVIEW
+
 1. Run some test cases/Dry run and see if your test cases are successfully passed.
 
 EVALUATE
+
 1. Calculate time and space complexity
 2. Think how your solution can be made more efficient
-
