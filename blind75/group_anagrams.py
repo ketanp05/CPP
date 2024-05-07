@@ -21,7 +21,7 @@ class GroupAnagramsProblem:
             # to conclude the keys are tuple with character counts and values are list of strings with those particular count combination(tuple)
             result_map[tuple(count)].append(string_in_strs)
         
-        return result_map.values()
+        return list(result_map.values())
 
 def main():
     gap = GroupAnagramsProblem()
