@@ -89,20 +89,58 @@ class TopKFrequentElements:
 
         """
         1. Here is your todo:
-        a. understand heapify neatly
         b. continue watching neetcode's approach
+        
+        if k == 0 or not nums:
+            return []
+
+        if len(nums) == 1:
+            return nums
+
+        # a counter hashmap for our nums input list with the help of the inbuild method Counter
+        # count_hashmap = Counter(nums)
+        count_hashmap = {}
+        freq_count = [[] for i in range(len(nums) + 1)]
+
+        for n in nums:
+            count_hashmap[n] = 1 + count_hashmap.get(n, 0)
+        for num, cnt in count_hashmap.items():
+            freq_count[cnt].append(num)
+
+        result = []
+        for j in range(len(nums) - 1, 0, -1):
+            for ele in freq_count[j]:
+                result.append(ele)
+                if len(result) == k:
+                    return result
         """
-        
+        if k == 0 or not nums:
+            return []
 
-
+        # Utilizing Counter to simplify frequency counting
+        count_hashmap = Counter(nums)
         
+        # Initialize the frequency count array with an extra space for the max frequency case
+        freq_count = [[] for _ in range(len(nums) + 1)]
         
+        for num, cnt in count_hashmap.items():
+            freq_count[cnt].append(num)
+        
+        result = []
+        # Iterate from the highest possible frequency down to 1
+        for j in range(len(freq_count)-1, 0, -1):
+            for ele in freq_count[j]:
+                result.append(ele)
+                if len(result) == k:
+                    return result
 
 def main():
     s = TopKFrequentElements()
     print(s.topKFrequent([1,1,1,2,3], 2))
     print(s.topKFrequent([], 2))
     print(s.topKFrequent([1,2,2,3,3,4,3,3,4], 3))
+    print(s.topKFrequent([1], 1))
+    print(s.topKFrequent([1,2,3,4,45,57,68], 2))
 
 if __name__ == "__main__":
     main()
