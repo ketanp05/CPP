@@ -1,0 +1,1 @@
+# notes on all advanced stuff related to python programming langauge
