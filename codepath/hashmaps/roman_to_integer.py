@@ -13,8 +13,10 @@ class Solution:
 
         for i in range(len(s)):
             if i+1 < len(s) and hashmap[s[i]] < hashmap[s[i+1]]:
+                # case - subtract I (1)
                 total -= hashmap[s[i]]
             else:
+                # case - add V (5)
                 total += hashmap[s[i]]
         
         return total
