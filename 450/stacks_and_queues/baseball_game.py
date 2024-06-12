@@ -56,8 +56,8 @@ class Solution:
 
 def main():
     s = Solution()
-    # ops = ["5","2","C","D","+"]
-    ops = ["5","-2","4","C","D","9","+","+"]
+    ops = ["5","2","C","D","+"]
+    # ops = ["5","-2","4","C","D","9","+","+"]
     print(s.calPoints(ops))
 
 if __name__ == "__main__":
