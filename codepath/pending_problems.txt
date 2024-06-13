@@ -1,0 +1,12 @@
+Complete these problems later:
+
+1. Unit 1 
+Session #2
+- integer to roman
+
+Optional practice problems
+- Length of Longest Fibonacci Subsequence
+- Split Array into Fibonacci Sequence
+
+2. Unit 2
+-
