@@ -1,0 +1,14 @@
+# Bubble sort 
+- Time Complexity is O(n^2)
+
+# O(logn) time complexity
+- as the input size increases, number of operations grows slowly
+- eg: binary tree
+- Both insertion and deletion in a heap are O(logn) because they involve traversing up or down the height of the binary tree, which is logarithmic in the number of elements.
+- O(nlogn) is the best worst case runtime we can get for sorting
+
+# Memoization
+- store results in cache, retrieve the same information from the cache the next time its needed instead of computing again
+- In simpler words, it consists of storing in cache the output of a function, and making the function check if each required computation is in the cache before computing it.
+
+# 

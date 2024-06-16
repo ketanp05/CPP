@@ -1,0 +1,99 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+env/
+venv/
+ENV/
+VENV/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# C#
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# C++/CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Backup files
+*.bak
+
+# Compiled files
+*.class
+*.out
+
+# Coverage reports
+coverage/
+*.cover
+*.lcov
+
+# Database
+*.sqlite
+*.db
+
+# Mac specific
+._*
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# Editor specific
+*.sublime-project
+*.sublime-workspace
+
+# Others
+*.lock
+.lock-wscript
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.swo
+*.swn
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
