@@ -1,5 +1,6 @@
 Complete these problems later:
 
+CODEPATH
 1. Unit 1 
 Session #2
 - integer to roman
@@ -10,3 +11,11 @@ Optional practice problems
 
 2. Unit 2
 -
+
+GENERAL
+1. Linked List
+- reorder list problem
+- intersection of two linked lists
+
+2. Recursion with memoization
+- neatly study the edge cases
